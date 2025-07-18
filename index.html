@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LWEAXO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://emojicdn.elk.sh/👑?style=google" type="image/png">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="profile-column">
+      <div class="profile-header">
+        <div class="avatar-container">
+          <img id="avatar" class="avatar" src="" alt=" ">
+          <div id="status-indicator" class="status-indicator offline"></div>
+        </div>
+        <div class="profile-info">
+          <h1 id="username" class="username">Loading...</h1>
+          <div class="custom-status">
+            <i class="fas fa-comment-alt"></i>
+            <span>Loading status...</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+<div class="skill-item">
+    <i class="fab fa-js"></i>
+    <span>JavaScript</span>
+  </div>
+  <div class="skill-item">
+    <i class="fab fa-html5"></i>
+    <span>HTML5</span>
+  </div>
+  <div class="skill-item">
+    <i class="fab fa-css3-alt"></i>
+    <span>CSS3</span>
+  </div>
+  <div class="skill-item">
+    <i class="fab fa-react"></i>
+    <span>React</span>
+  </div>
+  <div class="skill-item">
+    <i class="fab fa-node-js"></i>
+    <span>Node.js</span>
+  </div>
+  <div class="skill-item">
+    <i class="fab fa-python"></i>
+    <span>Python</span>
+  </div>
+  <div class="skill-item">
+    <i class="fab fa-php"></i>
+    <span>PHP</span>
+  </div>
+  <div class="skill-item">
+    <i class="fab fa-github"></i>
+    <span>GitHub</span>
+  </div>
+  <div class="skill-item">
+    <i class="fas fa-code"></i>
+    <span>TypeScript</span>
+  </div>
+  <div class="skill-item">
+    <i class="fas fa-file-code"></i>
+    <span>EJS</span>
+  </div>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="contact-section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-buttons">
+            <!-- Bu kısmı doldurun -->
+            <button class="contact-btn discord" data-url="https://discord.com/users/1015356240492245054">
+              <i class="fab fa-discord"></i>
+              <span>Discord</span>
+            </button>
+            <button class="contact-btn discord" data-url="discord.gg/codeium">
+              <i class="fab fa-discord"></i>
+              <span>Discord Sunucumuz</span>
+            </button>
+            <button class="contact-btn github" data-url="https://github.com/LWEAXO">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </button>
+            <button class="contact-btn instagram" data-url="https://instagram.com/lweaxo">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </button>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="activities-column">
+      <h2 class="section-title">Activities</h2>
+      <div id="activity-section" class="activity-section">
+        <p style="text-align:center;color:var(--text-muted);padding:20px;">Loading activities...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+        document.querySelectorAll('.contact-btn').forEach(button => {
+          button.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            if (url) {
+              window.open(url, '_blank');
+            }
+          });
+        });
+  </script>
+</body>
+</html>
