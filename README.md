@@ -83,7 +83,7 @@ const USER_ID = "DISCORD_IDNIZ"; // Discord ID'niz
 
 ## 🚀 Canlı Demo
 
-[![Website](https://img.shields.io/badge/🌐-Website-royalblue)]()
+[![Website](https://img.shields.io/badge/🌐-Website-royalblue)](https://lweaxo-portfolyo.vercel.app/)
 
 ## 📜 Lisans
 
